@@ -1,0 +1,9 @@
+sudo apt-get install rcs rcs-blame
+ci -u exercici.md
+co -l ./exercici.md
+ci -u ./exercici.md
+rlog ./exercici.md
+co -p1.1 ./exercici.md
+co -p1.2 ./exercici.md
+rcsdiff -r1.1 -r1.2 ./exercici.md
+co -r1.1 ./exercici.md

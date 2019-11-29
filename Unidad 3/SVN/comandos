@@ -1,0 +1,12 @@
+docker run -d mamohr/subversion-edge
+
+docker ps
+CONTAINER ID        IMAGE                    COMMAND                  CREATED             STATUS              PORTS                                                                               NAMES
+6b94fb673221        mamohr/subversion-edge   "/config/bootstrap.sh"   28 seconds ago      Up 19 seconds       3343/tcp, 4434/tcp, 18080/tcp     
+
+docker rm 6b94fb673221
+docker stop 6b94fb673221
+
+dockerrun-d-p3343:3343 -p4434:4434 -p18080:18080  --namesvn-servermamohr/subversion-edge
+
+dockerrun-d-p3343:3343 -p4434:4434 -p18080:18080 -v/srv/svn-data:/opt/csvn/data--namesvn-servermamohr/subversion-edge
