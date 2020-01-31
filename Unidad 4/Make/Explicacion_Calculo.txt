@@ -1,7 +1,0 @@
-Creamos el archivo en C llamado calculo.c
-
-Luego el programa calculo.h donde colocaremos las funciones
-Compilamos con el comando "gcc -c calculo.c -o calculo.h"
-Conseguimos el ejecutable mediante el comando "gcc calculo.h calculo.c -o calculo"
-Lo probamos ejecutandolo con el comando "./calculo"
-Ahora crearemos el fichero makefile
