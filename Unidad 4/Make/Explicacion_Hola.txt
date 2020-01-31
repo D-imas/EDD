@@ -1,0 +1,7 @@
+Instalamos el make mediante el comando "apt install make"
+
+Creamos un sencillo programa de C llamado hola.c
+Lo compilamos con el comando "gcc hola.c"
+Para cambiar el nombre de el ejecutable ponemos el comando "gcc hola.c -o *nombre ejecutable*"
+Si queremos mostrar todos los warning, lo haremos mediante "gcc -Wall -g hola.c -o *nombre ejecutale*"
+Por ultimo ejecutaremos el "make *nombre ejecutable*"
