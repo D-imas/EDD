@@ -1,0 +1,18 @@
+<project>
+    <target name="clean">
+        <delete dir="classes" />
+    </target>
+
+    <target name="compile" depends="clean">
+        <mkdir dir="classes" />
+    <javac includeantruntime="false" srcdir="ant/projecte" destdir="classes" />
+    </target>
+
+    <target name="run" depends="compile">
+        <java classpath="classes" classname="ant.projecte.calculo">
+            <arg value="${arg0}"/>
+            <arg value="${arg1}"/>
+        </java>
+
+    </target>
+</project>
